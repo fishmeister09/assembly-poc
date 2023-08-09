@@ -13,7 +13,7 @@
 const fs = require('fs');
 
 // Your API token is already set in this variable
-const API_TOKEN = '9f32ce2b560642b3a3075b12558db71d';
+const API_TOKEN = 'enter API key here';
 
 // Function to upload a local file to the AssemblyAI API
 async function upload_file(api_token, path) {
