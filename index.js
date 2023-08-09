@@ -108,7 +108,7 @@ async function main() {
   // You may also remove the upload step and update the 'audio_url' parameter in the
   // 'transcribeAudio' function to point to a remote audio or video file.
   // -----------------------------------------------------------------------------
-  const path = './audio.mp3';
+  const path = './react-interview.mp3';
   const uploadUrl = await upload_file(API_TOKEN, path);
   console.log(uploadUrl);
 
@@ -125,8 +125,8 @@ async function main() {
 
   // Print the completed transcript object
   console.log('Response', transcript);
-  fs.writeFileSync('transcript.json', JSON.stringify(transcript));
-  fs.writeFileSync('transcript.txt', transcript.text);
+  fs.writeFileSync(`transcript1.json`, JSON.stringify(transcript));
+  fs.writeFileSync(`transcript1.txt`, transcript.text);
 }
 
 main();
